@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>FordData</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>UploadData</display-name>
+    <servlet-name>UploadData</servlet-name>
+    <servlet-class>com.inovista.UploadReader</servlet-class>
+    <!--  
+    <init-param>
+      <description>The certificate password</description>
+      <param-name>certificateKey</param-name>
+      <param-value>UKnL22f</param-value>
+    </init-param>
+    <init-param>
+      <description>The path to the directory containing the component parts of the pass - DO NOT INCLUDE the pass.json as this will be generated here</description>
+      <param-name>componentDir</param-name>
+      <param-value>D:/temp/tmp/yourStore.raw</param-value>
+    </init-param>
+    <init-param>
+    	<description>The path to the Pass Certificate - note that it muse be in .p12 format and that paths use '/' and not '\'</description>
+    	<param-name>certificatePath</param-name>
+    	<param-value>D:/temp/tmp/Certificates.p12</param-value>
+    </init-param>
+    <init-param>
+    	<description>The path to the Apple WWDRCA Certificate - note that paths use '/' and not '\'</description>
+    	<param-name>wwwdrcaPath</param-name>
+    	<param-value>D:/temp/tmp/AppleWWDRCA.cer</param-value>
+    </init-param>-->
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UploadData</servlet-name>
+    <url-pattern>/UploadData</url-pattern>
+  </servlet-mapping>
+</web-app>
